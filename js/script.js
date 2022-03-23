@@ -5,6 +5,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault()
   if (document.getElementById("input-value").value.match(validRegex)) {
     document.getElementById("input-message").innerText = "valid email address"
+    document.getElementById("input-message").style.color = "green"
   } else {
     document.getElementById("input-message").innerText =
       "Please enter a valid email address"
