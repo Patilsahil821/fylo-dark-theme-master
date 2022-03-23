@@ -1,0 +1,248 @@
+:root {
+  --DarkBlue1: hsl(217, 28%, 15%);
+  --DarkBlue2: hsl(218, 28%, 13%);
+  --DarkBlue3: hsl(216, 53%, 9%);
+  --DarkBlue4: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --Light: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.illustration-intro {
+  width: 60%;
+}
+body {
+  background-color: var(--DarkBlue2);
+}
+.primary-background {
+  background-color: var(--DarkBlue4);
+}
+.secondary-background {
+  background-color: var(--DarkBlue2);
+}
+.curvy-background {
+  background: url("../images/bg-curvy-desktop.svg"),
+    linear-gradient(
+      to bottom,
+      transparent 40%,
+      hsl(218, 28%, 13%) 40% /* hsl(218, 28%, 13%) */
+    );
+  background-position: top, 40%;
+  background-size: 100% 100%, 0%;
+  background-repeat: no-repeat;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.banner-container {
+  width: 40%;
+  min-height: 300px;
+}
+.box-center {
+  display: block;
+  margin: 0 auto;
+}
+.button {
+  padding: 0.4rem 2rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+  border-radius: 25px;
+  font-size: 14px;
+}
+.button:hover {
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+.info-box {
+  width: 60%;
+}
+.productive-img {
+  width: 80%;
+  height: auto;
+}
+.productive-box {
+  width: 80%;
+}
+a {
+  text-decoration: none;
+}
+.see {
+  /* border-bottom: 1px solid hsl(176, 68%, 64%); */
+  border-bottom: 1px solid white;
+
+  width: fit-content;
+}
+.fylo-works {
+  color: white;
+  position: relative;
+}
+.see:hover .fylo-works {
+  color: var(--Cyan);
+}
+.see:hover {
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+.profession {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.comment-box {
+  background-color: var(--DarkBlue4);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.comment-para {
+  font-size: 1rem;
+}
+.quotes {
+  position: absolute;
+  top: -2.1rem;
+  left: -0.5rem;
+  width: 50px;
+  z-index: -1;
+}
+.input-box {
+  width: 60%;
+  position: absolute;
+  top: -8rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.third-background {
+  background-color: var(--DarkBlue1);
+}
+.fourth-background {
+  background-color: var(--DarkBlue3);
+}
+.email-input {
+  width: 60%;
+
+  border-radius: 25px;
+  border: 0;
+  outline: none;
+}
+.email-input input {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  border: 0;
+  outline: none;
+}
+#input-message {
+  font-size: 0.7rem;
+}
+.padding-200 {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+.padding-top-100 {
+  padding-top: 100px;
+}
+i {
+  color: white;
+  margin-right: 1.4rem;
+  padding: 0.4rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+i:first-child {
+  padding: 0.4rem 0.6rem;
+}
+i:hover {
+  color: var(--Cyan);
+  border: 1px solid hsl(176, 68%, 64%);
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  margin-bottom: 0.7rem;
+}
+a {
+  color: rgb(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.menu li {
+  margin-right: 2rem;
+}
+.menu li:hover {
+  text-decoration: underline;
+}
+.logo {
+  /* min-width: 30%; */
+  width: 100px;
+}
+/* media query */
+@media screen and (max-width: 800px) {
+  .productive-box {
+    width: 100%;
+  }
+  .comment-para {
+    font-size: 0.7rem;
+  }
+  .name {
+    font-size: 0.6rem;
+  }
+  .menu li {
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+  }
+  .banner-container {
+    width: 90%;
+  }
+  .curvy-background {
+    background-size: 100% 40%, 100%;
+  }
+  .info-box {
+    width: 90%;
+  }
+  .input-box {
+    width: 90%;
+    top: -13rem;
+    font-size: 14px;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .input-box button {
+    width: 100%;
+  }
+  .padding-200 {
+    padding-bottom: 250px;
+  }
+  .padding-top-100 {
+    padding-top: 130px;
+  }
+}
